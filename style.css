@@ -5,11 +5,60 @@ body {
     background-color:#eee;
     display: flex;
     justify-content: center;
+    width: 1200px;
 
 }
-.happy {
-    height: 600px;
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+.menu a{
+    text-decoration: none;
+}
+.halv2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 300px 1fr;
+    grid-template-areas: 
+    "octgro octgro octgro part"
+    "merch budd fine part"
+    ;
+    gap: 10px;
 }
 .octgro {
+    background-color: white;
+    grid-area: octgro;
+    display: flex;
+} 
+.merchllada {
+    background-color: white;
+    grid-area: merch;
+    text-align: center;
     
+}
+.buddieslada{
+    background-color: white;
+    grid-area: budd;
+    text-align: center;
+    
+}
+.finelada{
+    background-color: white;
+    grid-area: fine;
+    text-align: center;
+    
+}
+.partners{
+    background-color: white;
+    grid-area: part;
+    text-align: center;
+   
+}
+div{
+    padding: 10px;
+    border-radius: 5px;
+}
+img {
+    border-radius: 10px;
 }
