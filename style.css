@@ -5,17 +5,56 @@ body {
     background-color:#eee;
     display: flex;
     justify-content: center;
-    width: 1200px;
+    
 
+}
+.resort {
+    width: 1200px;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; */
+}
+.halv1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-area: 
+    "head meny"
+    "happy happy";
+}
+.headtext {
+    display: flex;
+    grid-area: head;
+}
+.meny {
+    grid-area: meny;
 }
 .menu{
     list-style: none;
     display: flex;
     justify-content: end;
+    
 }
 .menu a{
     text-decoration: none;
 }
+.happy {
+    grid-area: happy;
+    background-image: url(img/happiest-dog.webp);
+    height: 600px;
+    width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    
+}
+h1{
+    padding-top: 450px;
+    font-weight: 900px;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
 .halv2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
@@ -30,6 +69,9 @@ body {
     background-color: white;
     grid-area: octgro;
     display: flex;
+    object-fit: contain;
+    object-fit: scale-down;
+    /* hjälp med varför grooming bilden sticker ut ifrån divven */
 } 
 .merchllada {
     background-color: white;
