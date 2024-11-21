@@ -13,20 +13,17 @@ body {
     /* grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr; */
 }
-.halv1{
+.halv0{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-area: 
-    "head meny"
-    "happy happy";
 }
 .headtext {
     display: flex;
-    grid-area: head;
+    grid-column: 1/2;
 }
 .meny {
-    grid-area: meny;
+    grid-column: 2/3;
 }
 .menu{
     list-style: none;
@@ -34,8 +31,13 @@ body {
     justify-content: end;
     
 }
-.menu a{
+nav ul a{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    justify-content: right;
     text-decoration: none;
+    color: black;
 }
 .happy {
     grid-area: happy;
@@ -76,25 +78,26 @@ h1{
 .merchllada {
     background-color: white;
     grid-area: merch;
-    text-align: center;
+    text-align: left;
     
 }
 .buddieslada{
     background-color: white;
     grid-area: budd;
-    text-align: center;
+    text-align: left;
     
 }
 .finelada{
     background-color: white;
     grid-area: fine;
-    text-align: center;
+    text-align: left;
     
 }
 .partners{
     background-color: white;
     grid-area: part;
     text-align: center;
+    
    
 }
 div{
@@ -103,4 +106,7 @@ div{
 }
 img {
     border-radius: 10px;
+}
+p h2 h1 h3{
+    font-family: 'Courier New', Courier, monospace;
 }
